@@ -101,3 +101,25 @@ input:focus {
 .signup-text a:hover {
   text-decoration: underline;
 }
+
+.floating-bg span {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgba(39, 226, 193, 0.25);
+  border-radius: 50%;
+  animation: float 12s infinite ease-in-out;
+  filter: blur(4px);
+}
+
+.floating-bg span:nth-child(1) { left: 10%; width: 160px; height: 160px; animation-delay: 0s; }
+.floating-bg span:nth-child(2) { left: 70%; width: 200px; height: 200px; animation-delay: 3s; }
+.floating-bg span:nth-child(3) { left: 40%; width: 120px; height: 120px; animation-delay: 6s; }
+.floating-bg span:nth-child(4) { left: 85%; width: 180px; height: 180px; animation-delay: 1s; }
+
+@keyframes float {
+  0% { transform: translateY(120vh) scale(0.8); }
+  50% { transform: translateY(50vh) scale(1); }
+  100% { transform: translateY(-20vh) scale(0.6); }
+}
+
