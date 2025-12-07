@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <style>
+       
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(8, 30, 28);
+            color: white;
+        }
+
+      
+        header {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(220, 230, 230);
+            font-size: 15px;
+        }
+
+        nav ul li a:hover {
+            color: aquamarine;
+        }
+        
+        .btn {
+            padding: 7px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .btn-green {
+            background-color: #2bffb4;
+        }
+
+        .btn-green:hover {
+            background-color: #19d890;
+        }
+
+        
+        .page-title {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 34px;
+            font-weight: bold;
+        }
+
+      
+        .project-container {
+            width: 70%;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .project-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .project-box h3 {
+            margin-top: 0;
+            color: aquamarine;
+        }
+
+        .project-box p {
+            color: rgb(210, 220, 220);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    
+    <header>
+        <div class="logo">Sochenge</div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Practice</a></li>
+                <li><a href="#">AI Tutor</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a class="btn btn-green" href="#">Sign Up</a></li>
+                <li><a class="btn btn-green" href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <h1 class="page-title">Your Projects</h1>
+
+    
+    <div class="project-container">
+
+        <div class="project-box">
+            <h3>Portfolio Website</h3>
+            <p>A clean personal website built with HTML, CSS, and basic JS.</p>
+        </div>
+
+        <div class="project-box">
+            <h3>Calculator App</h3>
+            <p>A simple calculator demonstrating DOM manipulation and logic.</p>
+        </div>
+
+        <div class="project-box">
+            <h3>Todo Application</h3>
+            <p>A task manager with add/delete operations and stored data.</p>
+        </div>
+
+        <div class="project-box">
+            <h3>Weather App</h3>
+            <p>Fetches real-time weather using API and shows it beautifully.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
