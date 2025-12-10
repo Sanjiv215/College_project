@@ -3,12 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login | CodeElevate</title>
-  <link rel="stylesheet" href="login_signup.css" />
+  <title>Login | Your App</title>
+  <link rel="stylesheet" href="login_signup.css" /> 
+  
 </head>
 <body>
-
-  <div class="container">
+    <div class="floating-bg">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+    <div class="container">
     <div class="login-box">
       <h2>Welcome Back</h2>
       <p class="subtitle">Login to continue your coding journey</p>
@@ -16,19 +22,54 @@
       <form>
         <div class="input-group">
           <label>Email</label>
+        </div>
+        <div class="input-group">
+      
           <input type="email" placeholder="example@gmail.com" required />
         </div>
 
         <div class="input-group">
           <label>Password</label>
-          <input type="password" placeholder="••••••••" required />
         </div>
+        <div class="input-group pass">
+           <input type="password" placeholder="********" required id="password" />
+           <img src="eyes close.png" id="eyeicon">
+           </div>
 
-        <button type="submit" class="btn">Login</button>
+        <script>
+          let eyeicon = document.getElementById("eyeicon");
+          let password = document.getElementById("password");
+
+          eyeicon.onclick=function(){
+            if (password.type == 'password'){
+              password.type = 'text';
+              eyeicon.src ="eyes open.png";
+            }
+             else {
+              password.type = "password"
+              eyeicon.src ="eyes close.png";
+             }
+            }
+          
+        </script>
+  
+
+
+  
+        
+        <div class="rem">
+            <label class="remember">
+                <input type="checkbox" checked /> Remember Me
+            </label>
+            <a href="forgetpaa.html" class="forgot-link">Forgot Password?</a>
+        </div>
+        
+        <button type="submit" class="btn">Log In</button>
+        
       </form>
 
       <p class="signup-text">
-        Don’t have an account? <a href="#">Sign Up</a>
+        Don’t have an account? <a href="signup.html">Sign Up Now</a>
       </p>
     </div>
   </div>
